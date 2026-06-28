@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+<style>
+body{
+    font-family: Inter, sans-serif;
+    background: transparent;
+    color:#3e5c47;
+    font-size:32px;
+    font-weight:600;
+}
+</style>
+</head>
+<body>
+
+<div id="greeting"></div>
+
+<script>
+const hour = new Date().getHours();
+
+let greeting;
+
+if(hour < 12){
+    greeting = "☀️ Good morning, Chloë";
+}else if(hour < 18){
+    greeting = "🌿 Good afternoon, Chloë";
+}else{
+    greeting = "🌙 Good evening, Chloë";
+}
+
+document.getElementById("greeting").innerHTML = greeting;
+</script>
+
+</body>
+</html>
