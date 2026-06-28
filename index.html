@@ -4,11 +4,20 @@
  <meta charset="UTF-8">
 <style>
 body{
-    font-family: "Cormorant Garamond", serif;
-    background: transparent;
-    color:#3e5c47;
-    font-size:32px;
+    margin:0;
+    padding:0;
+
+    font-family:"EB Garamond", serif;
+    background:transparent;
+    color:#4d6755;
+
+    font-size:44px;
     font-weight:600;
+    line-height:1.1;
+    letter-spacing:-0.02em;
+
+    display:flex;
+    align-items:center;
 }
 </style>
 </head>
@@ -22,11 +31,11 @@ const hour = new Date().getHours();
 let greeting;
 
 if(hour < 12){
-    greeting = "𖤓 Good morning, Chloë";
+    greeting = "Good morning, Chloë ⋆☕︎˖";
 }else if(hour < 18){
-    greeting = "𓍼𓇢𓆸 Good afternoon, Chloë";
+    greeting = "Good afternoon, Chloë .☘︎ ݁˖";
 }else{
-    greeting = "☾ Good evening, Chloë";
+    greeting = "Good evening, Chloë‧ ₊˚ ⏾. ⋅";
 }
 
 document.getElementById("greeting").innerHTML = greeting;
